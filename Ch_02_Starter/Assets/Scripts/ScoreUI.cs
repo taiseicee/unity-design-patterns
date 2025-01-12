@@ -7,10 +7,10 @@ public class ScoreUI : MonoBehaviour {
     public Text score;
 
     private void Start() {
-        score.text += Manager.Instance.score;
+        score.text += GenericManager.Instance.score;
     }
 
     private void Update() {
-        score.text = $"Score: {Manager.Instance.score}";
+        score.text = $"Score: {GenericManager.Instance.score}";
     }
 }
