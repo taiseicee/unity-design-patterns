@@ -12,6 +12,7 @@ public class Manager : MonoBehaviour {
     private void Awake() {
         if (Instance == null) {
             Instance = this;
+            DontDestroyOnLoad(Instance);
             Debug.Log($"Manager Instance {Instance.GetInstanceID()} Initialized");
         } else if (Instance != this) {
             Destroy(this.gameObject);
