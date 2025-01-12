@@ -21,7 +21,7 @@ public class Manager : MonoBehaviour {
     }
 
     public void StartGame() {
-        Debug.Log("New game has started...");
+        Debug.Log("New game has started with Manager");
         SceneManager.LoadScene(startingLevel);
     }
 }

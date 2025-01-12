@@ -6,7 +6,7 @@ public class GenericManager : Singleton<GenericManager> {
     public int startingLevel = 1;
 
     public void StartGame() {
-        Debug.Log("New game has started");
+        Debug.Log("New game has started with Generic Manager");
         SceneManager.LoadScene(startingLevel);
     }
 }

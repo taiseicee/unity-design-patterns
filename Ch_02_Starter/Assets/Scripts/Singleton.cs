@@ -28,7 +28,7 @@ public class Singleton<T> : MonoBehaviour where T: MonoBehaviour {
         s_instance = singletonObject.AddComponent<T>();
 
         DontDestroyOnLoad(s_instance);
-        Debug.Log($"Manager Instance {s_instance.GetInstanceID()} Initialized");
+        Debug.Log($"Generic Manager Instance {s_instance.GetInstanceID()} Initialized");
     }
 
     private void OnDestroy() {
