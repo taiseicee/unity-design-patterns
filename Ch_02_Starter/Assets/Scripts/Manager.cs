@@ -4,13 +4,22 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Manager : MonoBehaviour
-{
+public class Manager : MonoBehaviour {
+    public static Manager Instance;
     public int score = 0;
     public int startingLevel = 1;
 
-    public void StartGame()
-    {
+    private void Awake() {
+        if (Instance == null) {
+            Instance = this;
+            Debug.Log($"Manager Instance {Instance.GetInstanceID()} Initialized");
+        } else if (Instance != this) {
+            Destroy(this.gameObject);
+            Debug.Log($"Manager Instance {this.GetInstanceID()} Found; Deleting Self");
+        }
+    }
+
+    public void StartGame() {
         Debug.Log("New game has started...");
         SceneManager.LoadScene(startingLevel);
     }
