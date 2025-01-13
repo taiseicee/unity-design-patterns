@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: 1889899710}
   - component: {fileID: 1889899711}
   - component: {fileID: 1889899712}
+  - component: {fileID: 1889899713}
   m_Layer: 0
   m_Name: Enemy Spawner
   m_TagString: Untagged
@@ -502,13 +503,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889899708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d3846e07054def46aff9d093c514e87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _ogrePrefab: {fileID: 1881740755986282774, guid: 77d89141be66842778fd5a7e0f1bb269, type: 3}
   _ashKnightPrefab: {fileID: 5744896695828446141, guid: 04dd78096590849b88992854daa1f4c5, type: 3}
+--- !u!114 &1889899713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889899708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c334d96f1ba82745bb24531b42b6279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ogrePrefab: {fileID: 8883573433484111490, guid: 77d89141be66842778fd5a7e0f1bb269, type: 3}
+  _ashKnightPrefab: {fileID: -7910556769890995539, guid: 04dd78096590849b88992854daa1f4c5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
